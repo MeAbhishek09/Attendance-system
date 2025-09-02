@@ -4,6 +4,7 @@ import Background from "./Background";
 // import { HomeIcon, CalendarIcon, UserGroupIcon, ChartBarIcon, LogoutIcon } from  "react-icons/fa";
 // import { HomeIcon, CalendarIcon, UserGroupIcon, ChartBarIcon, LogoutIcon } from '@heroicons/react/24/outline';
 import { FaHome, FaCalendarAlt, FaUsers, FaChartBar, FaSignOutAlt } from "react-icons/fa";
+import Avatar from "react-avatar";
 
 const Admin = () => {
   const navigate = useNavigate();
@@ -57,9 +58,12 @@ const Admin = () => {
             {/* Profile + Logout */}
             <div className="mt-8">
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-gray-400">
-                  <img src="" alt="Profile" className="w-full h-full object-cover" />
-                </div>
+                <Avatar 
+                  name="Admin" 
+                  size="48" 
+                  round={true} 
+                  textSizeRatio={2} 
+                />
                 <button className="text-black font-medium">Admin</button>
               </div>
               <button 

@@ -4,6 +4,7 @@ import Navbar from "./Navbar";
 import Hero from "./Hero";
 import Features from "./Features";
 import StatsSection from "./StatsSection"
+import Footer from "./Footer";
 
 
 const Home = () => {

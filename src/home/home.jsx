@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import Navbar from "./Navbar";
 import Hero from "./Hero";
 import Features from "./Features";
+import StatsSection from "./StatsSection"
 
 
 const Home = () => {
@@ -11,7 +12,8 @@ const Home = () => {
       <Navbar />
       <Hero />
       <Features/>
-      {/* <Footer /> */}
+      <StatsSection/>
+      <Footer />
     </div>
   );
 };

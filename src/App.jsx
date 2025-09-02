@@ -40,7 +40,8 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* Default route shows SignUp page */}
+        {/* Default route shows Home page */}
+        
         <Route path="/SignupPage" element={<SignupPage />} />
 
         {/* Login page */}

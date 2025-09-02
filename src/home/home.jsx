@@ -1,0 +1,17 @@
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import Navbar from "./Navbar";
+import Hero from "./Hero";
+
+
+const Home = () => {
+  return (
+    <div>
+      <Navbar />
+      <Hero />
+      {/* <Footer /> */}
+    </div>
+  );
+};
+
+export default Home;

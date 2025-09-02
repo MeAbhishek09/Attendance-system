@@ -27,12 +27,12 @@
 // src/App.jsx
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Login from "./components/Login";
-import Admin from "./components/Admin";
-import Participants from "./components/Participants";
-import Analytics from "./components/Analytics";
-import Event from "./components/Event";
-import SignupPage from "./components/SignupPage";
+import Login from "./dashboard/Login";
+import Admin from "./dashboard/Admin";
+import Participants from "./dashboard/Participants";
+import Analytics from "./dashboard/Analytics";
+import Event from "./dashboard/Event";
+import SignupPage from "./dashboard/SignupPage";
 import Home from "./home/home"
 
 function App() {

@@ -1,6 +1,6 @@
 // src/pages/EventDashboard.jsx
 import React from "react";
-import Background from "../components/Background";
+import Background from "./Background";
 
 const Analytics = () => {
   return (

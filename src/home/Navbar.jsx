@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
+import { Menu, X } from "lucide-react"; // Hamburger & Close icons
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <nav
       id="navbar"
@@ -17,7 +20,7 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* Navigation Links */}
+        {/* Desktop Navigation */}
         <ul className="hidden md:flex gap-6">
           <li>
             <a
@@ -52,7 +55,59 @@ const Navbar = () => {
             </a>
           </li>
         </ul>
+
+        {/* Mobile Menu Button */}
+        <button
+          className="md:hidden text-white"
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          {isOpen ? <X size={28} /> : <Menu size={28} />}
+        </button>
       </div>
+
+      {/* Mobile Dropdown */}
+      {isOpen && (
+        <div className="md:hidden bg-[#0f2136] border-t border-white/20 px-6 py-4">
+          <ul className="flex flex-col gap-4 text-center">
+            <li>
+              <a
+                href="#home"
+                className="text-white font-semibold hover:text-yellow-400 transition"
+                onClick={() => setIsOpen(false)}
+              >
+                Home
+              </a>
+            </li>
+            <li>
+              <a
+                href="#features"
+                className="text-white font-semibold hover:text-yellow-400 transition"
+                onClick={() => setIsOpen(false)}
+              >
+                Features
+              </a>
+            </li>
+            <li>
+              <a
+                href="#stats"
+                className="text-white font-semibold hover:text-yellow-400 transition"
+                onClick={() => setIsOpen(false)}
+              >
+                Statistics
+              </a>
+            </li>
+            <li>
+              <a
+                href="#about"
+                className="text-white font-semibold hover:text-yellow-400 transition"
+                onClick={() => setIsOpen(false)}
+              >
+                About
+              </a>
+            </li>
+          </ul>
+        </div>
+      )}
     </nav>
   );
 };

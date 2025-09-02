@@ -1,28 +1,3 @@
-// // src/App.jsx
-// import Login from "./components/login";
-// import Admin from "./components/Admin";
-// import Event from "./components/Event"
-// import Background from "./components/Background"
-// import Analytics from "./components/Analytics"
-// import Participants from "./components/Participants"
-
-// function App() {
-//   return (
-//     <>
-//       {/* <Login /> */}
-//       {/* <Admin/> */}
-//       {/* <Event/> */}
-//       {/* <Background /> */}
-//       {/* <Analytics/> */}
-//       <Participants/>
-//     </>
-//   );
-// }
-
-// export default App;
-
-
-
 
 // src/App.jsx
 import React from "react";

@@ -1,4 +1,4 @@
-// src/pages/EventDashboard.jsx
+
 import React from "react";
 import Background from "./Background";
 

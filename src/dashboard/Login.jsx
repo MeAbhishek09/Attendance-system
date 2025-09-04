@@ -1,22 +1,3 @@
-   // ✅ Page switching
-  // if (page === "member") {
-  //   return (
-  //     <div className="flex items-center justify-center min-h-screen bg-green-100">
-  //       <h1 className="text-3xl font-bold">🎓 Welcome, {name}! (Member Page)</h1>
-  //     </div>
-  //   );
-  // }
-
-  // if (page === "admin") {
-  //   return (
-  //     <div className="flex items-center justify-center min-h-screen bg-yellow-100">
-  //       <h1 className="text-3xl font-bold">🔑 Welcome Admin ({username})</h1>
-  //     </div>
-  //   );
-  // }
-
-
-// src/components/Login.jsx
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { FaUserPlus, FaLock } from "react-icons/fa";

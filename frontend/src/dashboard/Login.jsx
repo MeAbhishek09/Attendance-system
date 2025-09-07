@@ -108,11 +108,11 @@ const handleLogin = () => {
             </button>
           </div>
           <button
-            // onClick={() => navigate("/admin")}
+            onClick={() => navigate("/admin")}
 
             // chnage this while backend 
 
-            onClick={handleLogin}
+            // onClick={handleLogin}
             className="w-full bg-blue-800 hover:bg-blue-700 text-white  h-10 rounded-md"
           >
             Login

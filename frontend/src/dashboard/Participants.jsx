@@ -1,42 +1,38 @@
-
 import React from "react";
-import Background from "./Background";
 
 const Participants = () => {
   return (
-    <div className="min-h-screen w-full flex items-center justify-center px-4 py-10">
-         <div className="absolute inset-0 z-0">
-        <Background />
-      </div>
-      <div className="w-[1000px] h-full overflow-y-auto px-6 py-8 space-y-8 bg-white/80 backdrop-blur-lg rounded-2xl shadow-2xl">
+    <div className="w-full h-full flex flex-col space-y-6 overflow-y-auto">
+      
+      {/* Box: Participant Table */}
+      <div className="w-full border border-gray-400 rounded-xl overflow-auto min-h-[300px] shadow-lg bg-white/80 backdrop-blur-sm">
         
-        {/* Box 1: Participant Summary */}
-        <div className="w-full border border-gray-400 rounded-xl overflow-auto min-h-[300px]">
-          <div className="grid grid-cols-4 text-xl font-semibold border-b border-gray-400 h-16 px-6 sticky top-0 bg-gray-100">
-            <div className="flex items-center">Event Name</div>
-            <div className="flex items-center">Total Participants</div>
-            <div className="flex items-center">Present</div>
-            <div className="flex items-center">Absent</div>
-          </div>
-          {/* Placeholder */}
-          <div className="flex justify-center items-center h-[200px] text-gray-500 text-lg">
-            No participants data available
-          </div>
-        </div>
-
-        {/* Box 2: Detailed Participant List */}
-        <div className="w-full border border-gray-400 rounded-xl overflow-auto min-h-[300px]">
-          <div className="grid grid-cols-3 text-xl font-semibold border-b border-gray-400 h-16 px-6 sticky top-0 bg-gray-100">
-            <div className="flex items-center">Participant Name</div>
-            <div className="flex items-center">Status</div>
-            <div className="flex items-center">Event Attended</div>
-          </div>
-          {/* Placeholder */}
-          <div className="flex justify-center items-center h-[200px] text-gray-500 text-lg">
-            No participant records found
+        {/* Header Row */}
+        <div className="grid grid-cols-2 text-xl font-semibold border-b border-gray-400 h-16 px-4 sticky top-0 bg-gray-100 z-10">
+          <div className="flex items-center">Event Name</div>
+          <div className="flex items-center gap-2 justify-end">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-5 h-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M17 20h5v-2a4 4 0 00-5-4H7a4 4 0 00-5 4v2h5m4-9a4 4 0 100-8 4 4 0 000 8z"
+              />
+            </svg>
+            See Participants
           </div>
         </div>
 
+        {/* Dynamic Event Rows / Placeholder */}
+        <div className="flex justify-center items-center h-[200px] text-gray-500 text-lg">
+          No data available
+        </div>
       </div>
     </div>
   );

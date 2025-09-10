@@ -3,12 +3,8 @@ import Background from "./Background";
 
 export default function Event() {
   return (
-    <div className="relative min-h-screen w-screen flex items-center justify-center">
-      {/* Background (always full screen, behind content) */}
-      <div className="absolute inset-0 z-0">
-        <Background />
-      </div>
-
+    <div className="w-full h-full overflow-y-auto px-6 py-4 space-y-8">
+    
       {/* Foreground Card */}
       <div className="relative z-10 overflow-y-auto max-h-[90vh] w-[1000px] px-8 pt-10 space-y-6 bg-white shadow-lg rounded-xl">
         {/* Event Name */}
